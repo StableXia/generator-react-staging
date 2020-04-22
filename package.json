@@ -49,6 +49,11 @@
   "lint-staged": {
     "*.js": "eslint --max-warnings=0"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "xo",
