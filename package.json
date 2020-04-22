@@ -40,15 +40,14 @@
   "jest": {
     "testEnvironment": "node"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": "eslint --max-warnings=0"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +69,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "xiaotangdou/generator-react-staging",
+  "repository": "https://github.com/xiaotangdou/generator-react-staging.git",
   "license": "MIT"
 }
