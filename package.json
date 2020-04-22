@@ -5,8 +5,7 @@
   "homepage": "https://github.com/xiaotangdou/generator-react-staging",
   "author": {
     "name": "xw",
-    "email": "1124428668@qq.com",
-    "url": ""
+    "email": "1124428668@qq.com"
   },
   "files": [
     "generators"
